@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Compra de Cursos</title>
+		<!--archivo: carritodecompras.html-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="author" content=""/>
+		<meta name="copyright" content="Desarrollo de aplicaciones para la web"/>
+		<meta name="keywords" content="HTML, JavaScript, carrito de compras, svg, gráficas vectoriales escalables"/>
+		<meta name="description" content="carrito de compras"/>
+		<meta name="robots" content="index"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/consulta_contenido.css" />
+	</head>
+	<body>
+        <!--encabezado  de la pag-->
+        <div id="header">
+            <!--contenedor del logo-->
+            <div id="logoescom"></div>
+            <label class="title">SISTEMA GESTOR DE CURSOS PARA APOYO DE ESTUDIANTES Y ALUMNOS</label>
+            <!--contenedor tipo de usuario-->
+            <div id="usertype">
+                <img src="/Users/usuario/Desktop/pagCURSOS/paginas/media/usuario.png" alt="Avatar" class="image" style="width: 100%;">
+                <div class="middle">
+                    <div class="text">Invitado</div>
+                </div>
+            </div>
+        </div>
+        <!--menu de navegacin entre la pagina-->
+        <div  class="nav_hor">
+            <ul class="menu">
+                <li><a href="principal.html">PRINCIPAL</a>
+                </li>
+                <li><a href="">CURSOS</a>
+                    <ul class="submenu">
+                        <li><a  href="comprasCURSOS.html">Consultar Cursos</a></li>
+                        <li><a  href="consulta_temas.html">Temas del Curso</a></li>
+                    </ul>
+                </li>
+                <li><a href="">PERFIL</a>
+                    <ul class="submenu">
+                        <li><a  href="">Crear Cuenta</a></li>
+                        <li><a  href="">Iniciar Sesion</a></li>
+                    </ul>
+                </li>
+                <li><a href="">AYUDA</a>
+                    <ul class="submenu">
+                        <li><a  href="">Problemas con<br>el ingreso</a></li>
+                        <li><a  href="">Problemas al crear cuenta</a></li>
+                        <li><a  href="">Reportar errores</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <nav class="nav">
+            <ul class="list">
+                <li class="list_item">
+                    <div class="list_button">
+                        <img src="assets/dashboard.svg" class="list_img">
+                        <a href="#" class="nav_link">Analisis de Nodos</a>
+                    </div>
+                </li>
+                
+                <li class="list_item list_item--click">  
+                    <div class="list_button list_button--click">
+                        <img src="assets/file.svg" class="list_img">
+                        <a href="#" class="nav_link">Temas</a>
+                        <img src="assets/arrow.svg" class="list_arrow">
+                    </div>
+
+                    <ul class="list_show">
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">¿Que es?</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Formula</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Ejercicios Ejemplo</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="list_item">
+                    <div class="list_button">
+                        <img src="assets/task.svg" class="list_img">
+                        <a href="#" class="nav_link">Evaluacion</a>
+                    </div>
+                </li>
+
+                <li class="list_item list_item--click">  
+                    <div class="list_button list_button--click">
+                        <img src="assets/bell.svg" class="list_img">
+                        <a href="#" class="nav_link">Ejercicios</a>
+                        <img src="assets/arrow.svg" class="list_arrow">
+                    </div>
+
+                    <ul class="list_show">
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Ejercicio 1</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Ejercicio 2</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Ejercicio 3</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="list_item">
+                    <div class="list_button">
+                        <img src="assets/chat.svg" class="list_img">
+                        <a href="#" class="nav_link">Contacto</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <script src="js/consulta_contenido.js"></script>
+	</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Principal</title>
+		<!--archivo: carritodecompras.html-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="author" content=""/>
+		<meta name="copyright" content="Desarrollo de aplicaciones para la web"/>
+		<meta name="keywords" content="HTML, JavaScript, carrito de compras, svg, gráficas vectoriales escalables"/>
+		<meta name="description" content="carrito de compras"/>
+		<meta name="robots" content="index"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/principal.css" />
+	</head>
+	<body>
+        <!--encabezado  de la pag-->
+        <div id="header">
+            <!--contenedor del logo-->
+            <div id="logoescom"></div>
+            <label class="title">SISTEMA GESTOR DE CURSOS PARA APOYO DE ESTUDIANTES Y ALUMNOS</label>
+            <!--contenedor tipo de usuario-->
+            <div id="usertype">
+                <img src="/Users/usuario/Desktop/pagCURSOS/paginas/media/usuario.png" alt="Avatar" class="image" style="width: 100%;">
+                <div class="middle">
+                    <div class="text">Invitado</div>
+                </div>
+            </div>
+        </div>
+        <!--menu de navegacin entre la pagina-->
+        <div  class="nav">
+            <ul class="menu">
+                <li><a href="principal.html">PRINCIPAL</a>
+                </li>
+                <li><a href="">CURSOS</a>
+                    <ul class="submenu">
+                        <li><a  href="comprasCURSOS.html">Consultar Cursos</a></li>
+                        <li><a  href="consulta_temas.html">Temas del Curso</a></li>
+                    </ul>
+                </li>
+                <li><a href="">PERFIL</a>
+                    <ul class="submenu">
+                        <li><a  href="">Crear Cuenta</a></li>
+                        <li><a  href="">Iniciar Sesion</a></li>
+                    </ul>
+                </li>
+                <li><a href="">AYUDA</a>
+                    <ul class="submenu">
+                        <li><a  href="">Problemas con<br>el ingreso</a></li>
+                        <li><a  href="">Problemas al crear cuenta</a></li>
+                        <li><a  href="">Reportar errores</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="contenido">
+            <div id="aside1">
+                <img src="assets/check.svg">
+                <p class="subtitle" style="color: #004aad">MISION</p>
+                <p class="text">"Proporcionar una plataforma educativa en línea de vanguardia que empodere a estudiantes y profesionales de la ingeniería, ofreciendo cursos de alta calidad que fomenten el aprendizaje práctico, la innovación y la excelencia académica. Nos comprometemos a facilitar el acceso a una educación de ingeniería de clase mundial, sin importar la ubicación geográfica, promoviendo así el crecimiento individual y el avance colectivo en el campo de la ingeniería."</p>
+            </div>
+            <div id="aside2">
+                <img src="assets/check.svg">
+                <p class="subtitle" style="color: #004aad">VISION</p>
+
+            </div>
+            <div id="aside3">
+                <img src="assets/check.svg">
+                <p class="subtitle" style="color: #004aad">OBJETIVOS</p>
+                <div class="list">
+                    <ul>
+                        <li class="list_item">Ofrecer Contenido Educativo de Calidad</li>
+                        <li class="list_item">Accesibilidad</li>
+                        <li class="list_item">Certificacion y Reconocimiento</li>
+                        <li class="list_item">Variedad de Temas</li>
+                        <li class="list_item">Flexibilidad de Aprendizaje</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+	</body>
+</html>
+            <!--SEGMENTO HTML PARA EL INICIO DE SESION-->
+            <!--<div id="inicio_sesion">
+                <p class="log-title">INICIAR SESIÓN</p>
+
+                <div id="log-error-msg-cont">
+                    <p id="log-error-msg">Usuario invalido<span id="error-msg-linea-2">y/o contraseña</span></p>
+                </div>
+
+                <form id="log-form">
+                    <input type="text" name="usuario" id="campo-usuario" class="log-form-campo" placeholder="Usuario">
+                    <input type="password" name="password" id="campo-password" class="pass-form-campo" placeholder="Contraseña">
+                    <input type="submit" value="INGRESAR" id="log-enviar">
+                    <div class="fechaHora">
+                        <script>
+                            var date = new Date();
+                            var d  = date.getDate();
+                            var day = (d < 10) ? '0' + d : d;
+                            var m = date.getMonth() + 1;
+                            var month = (m < 10) ? '0' + m : m;
+                            var yy = date.getYear();
+                            var year = (yy < 1000) ? yy + 1900 : yy;
+                            document.write(day + "/" + month + "/" + year);
+                            //]]>
+                        </script>
+                    </div>
+                </form>
+            </div>-->
+  

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Compra de Cursos</title>
+		<!--archivo: carritodecompras.html-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="author" content=""/>
+		<meta name="copyright" content="Desarrollo de aplicaciones para la web"/>
+		<meta name="keywords" content="HTML, JavaScript, carrito de compras, svg, gráficas vectoriales escalables"/>
+		<meta name="description" content="carrito de compras"/>
+		<meta name="robots" content="index"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/compras_style.css" />
+	</head>
+	<body>
+        <!--encabezado  de la pag-->
+        <div id="header">
+            <!--contenedor del logo-->
+            <div id="logoescom"></div>
+            <label class="title">SISTEMA GESTOR DE CURSOS PARA APOYO DE ESTUDIANTES Y ALUMNOS</label>
+            <!--contenedor tipo de usuario-->
+            <div id="usertype">
+                <img src="/Users/usuario/Desktop/pagCURSOS/paginas/media/usuario.png" alt="Avatar" class="image" style="width: 100%;">
+                <div class="middle">
+                    <div class="text">Invitado</div>
+                </div>
+            </div>
+        </div>
+        <!--menu de navegacin entre la pagina-->
+        <div  class="nav">
+            <ul class="menu">
+                <li><a href="principal.html">PRINCIPAL</a>
+                </li>
+                <li><a href="">CURSOS</a>
+                    <ul class="submenu">
+                        <li><a  href="comprasCURSOS.html">Consultar Cursos</a></li>
+                        <li><a  href="consulta_temas.html">Temas del Curso</a></li>
+                    </ul>
+                </li>
+                <li><a href="">PERFIL</a>
+                    <ul class="submenu">
+                        <li><a  href="">Crear Cuenta</a></li>
+                        <li><a  href="">Iniciar Sesion</a></li>
+                    </ul>
+                </li>
+                <li><a href="">AYUDA</a>
+                    <ul class="submenu">
+                        <li><a  href="">Problemas con<br>el ingreso</a></li>
+                        <li><a  href="">Problemas al crear cuenta</a></li>
+                        <li><a  href="">Reportar errores</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+		<header>
+			<h1 class="subtitle">Cursos</h1>
+		</header>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img
+						src="media/ley-de-ohm.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2 class="subtitle">Ley de Ohm</h2>
+					<p class="price">$50</p>
+					<button class="btn-add-cart">Inscribir Curso</button>
+                    <a href="temOhm.html"><button class="link-button">Ver materiales</button></a>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="media/lck.svg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2 class="subtitle">Leyes de Kirchoff</h2>
+					<p class="price">$100</p>
+					<button class="btn-add-cart">Inscribir Curso</button>
+                    <a href="temKirchoff.html"><button class="link-button">Ver materiales</button></a>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="media/nodos.svg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2 class="subtitle">Analisis de Nodos</h2>
+					<p class="price">$50</p>
+					<button class="btn-add-cart">Inscribir Curso</button>
+                    <a href="temNodos.html"><button class="link-button">Ver materiales</button></a>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="media/mallas.svg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2 class="subbtitle">Analisis de Mallas</h2>
+					<p class="price">$50</p>
+                    <button class="btn-add-cart">Inscribir Curso</button>
+                    <a href="temMallas.html"><button class="link-button">Ver materiales</button></a>
+                </div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="media/thevnort.png"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2 class="subtitle">Teorema de Thevenin y Norton</h2>
+					<p class="price">$100</p>
+					<button class="btn-add-cart">Inscribir Curso</button>
+                    <a href="temThevNort.html"><button class="link-button">Ver materiales</button></a>
+				</div>
+			</div>
+		</div>
+        <script src="js/comprar.js"></script>
+	</body>
+</html>

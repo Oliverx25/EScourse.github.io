@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Con este selector de elemento, establecemos el aspecto que tendrá el cuerpo de la página, teniendo un margen de 0 arriba y abaja, y automatico para los costados, con esto, centramos los elementos que vayan dentro del cuerpo. Se le añade un ancho máximo de 1200 px, ademas de elegir una fuente y color de fuente*/
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#header{
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    width: 100%;
+    height: 75px;
+    background-color: #004aad;
+}
+
+.title{
+    color: white;
+    font-size: larger;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center; /* Centrar horizontalmente */
+    flex: 1; /* Ocupa el espacio restante horizontalmente */
+}
+
+.subtitle{
+    font-size: large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center; /* Centrar horizontalmente */
+    flex: 1; /* Ocupa el espacio restante horizontalmente */
+}
+
+#logoescom{
+    background-color: none;
+    background-image: url('/Users/usuario/Desktop/pagCURSOS/paginas/media/logo.png');
+    background-size: 100% 100%;
+    width: 20%;
+    height: 50px;
+    margin-left: 15px;
+}
+
+#header #logoescom{
+    width: 70px;
+    height: 60px;
+    float: left;
+    border-radius: 1em;
+    margin-top: 7px;
+    margin-left: 15px;
+}
+
+/*inicia contenedor de tipo de usuario*/
+#usertype {
+    position: relative; /* Agregado para que los elementos internos sean relativos a este contenedor */
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    overflow: hidden; /* Agregado para asegurar que el texto no se desborde fuera del contenedor */
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#usertype:hover .image {
+    opacity: 0.3;
+}
+
+#usertype:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    padding: 1px 1px;
+    position: relative; /* Agregado para ajustar la posición del texto */
+    z-index: 1; /* Agregado para asegurar que el texto esté sobre la imagen */
+/*termina contenedor de tipo de usuario*/}
+
+.nav{
+    width: 100%;
+    margin:none;
+    background-color: #ebebeb;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul{ /*selector descendente sin viñeta*/
+    list-style: none;
+    text-align: center;
+    align-items: center;
+}
+
+.menu>li{
+    display: inline-block;
+}
+
+.menu>li>a{
+    display: block;
+    padding: 5px 20px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.menu li a:hover{/*selector de subclase en accion sobre de el elemento*/
+    color: #004aad;
+    transition: all .3s;
+}
+
+.submenu{
+    position: absolute;
+    background: #ebebeb;
+    width: auto;
+    display: none;
+}
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: darkslategrey;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.menu li:hover .submenu{/*se aplica la  accion de sobre de para los submenus*/
+    display: block;
+}
+
+.submenu li a:hover{
+    font-size: large;
+}
+
+/*Con este selector, estamos definiendo que todas las imagenes tendran un ancho máximo de 100%*/
+img{
+    max-width: 100%;
+}
+
+/*Header, será el encabezado de la página*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+}
+
+#contenido {
+    width: 98%;
+    height: 750px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    border-radius: 1em;
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos hijos */
+    background: #ebebeb;
+}
+
+#aside1, #aside2, #aside3 {
+    width: 30%;
+    height: 80%;
+    background: #ebebeb;
+    border-radius: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    justify-content: center;
+    text-align: center;
+}
+
+#aside2 {
+    margin: 0 2em; /* Centra el aside2 horizontalmente */
+}
+
+#aside3 {
+    float: right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.list_item {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+
+
+/*.log-title{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#inicio_sesion{
+    width: 15%;
+    height: 95%;
+    display: grid;
+    justify-items: center;
+    border-radius: 1em;
+    align-items: center;
+    background-color: #ebebeb;
+    text-align: center;
+}
+
+#log-error-msg-cont{
+    width: 100%;
+    height: 50%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+#log-error-msg{
+    width: 20%;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    color: #8a0000;
+    border: 1px solid #8a0000;
+    background-color: #e58f8f;
+    opacity: 0;
+}
+
+#error-msg-linea-2{
+    display: block;
+}
+
+#log-form{
+    align-self: flex-start;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.log-form-campo::placeholder{
+    color: #3a3a3a;
+}
+
+.log-form-campo, .pass-form-campo{
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0px 0px 5px 5px;
+}
+#log-enviar{
+    width: 50%;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: #3a3a3a;
+    cursor: pointer;
+    margin-top: 100px;
+    justify-content: baseline;
+    outline: none;
+}
+
+.fechaHora {
+    margin-top: 20px;
+    background-color: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}*/
